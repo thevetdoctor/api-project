@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="author" content="Ben Howdle and Dan Matthew">
+   <meta name="description" content="A responsive movie poster grabber">
+   <title>Yellow API project</title>
+   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script>
+        <!--jQuery, linked from a CDN-->
+   <!--<script src="scripts.js"></script>
+   <script type="text/javascript" src="http://use.typekit.com/oya4cmx.js"></script>
+   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+-->
+   
+   <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+   
+   <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+   
+   <style>
+   .padding {
+               padding-right: 20px;
+               font-size: 25px;
+      };
+
+   .foot {
+
+         padding-right: 20px;
+         font-size: 25px;
+         font-style: italic;
+         color : #33f;
+   };
+
+   #breadcrumb {
+         float: right;
+         clear: both;
+         border-radius: 25px;
+         right: auto;
+   }
+
+   .row {
+
+      display: block;
+   }
+
+
+      </style> 
+   
+</head>
+<body style="background-image: url('bg.jpg'); background-repeat: no-repeat; background-size: cover; padding-bottom:70px">
+<div class="container-fluid">
+
+   <div class="row"></div>
+
+   <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6"><h1>Welcome to Canada</h1>
+         <h3>Let's find you the closest accomodation</h3></div>
+      <div class="col-md-3"></div>
+   </div>
+
+   <div class="row"></div>
+
+   <div class="row">
+      <div class="col-xs-6 col-md-2"></div>
+      <div class="col-xs-6 col-md-8">
+         
+         <div id="fetch">
+            <input class="btn btn-default" type="text" placeholder="Hotels in Canada" id="term" />
+      
+            <button id="myGet" class="btn btn-success">Search Canada</button>
+         </div>
+
+      </div>
+      <div class="col-xs-6 col-md-2"></div>
+   </div>
+
+   <div id="breadcrumb" class="row"></div>
+
+   <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col.md-4">
+         <footer class="navbar navbar-fixed-bottom" align="right">
+
+            <p class="padding"><a class="foot" href="http://www.animalworldltd.com">Obafemi @ Andela Class X</a></p>
+
+         </footer>
+      </div>
+      <div class="col-md-4"></div>
+   </div>
+</div>
+
+<script type="text/javascript" src="json.js"></script>
+</body>
+</html>
