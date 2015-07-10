@@ -16,11 +16,12 @@
    
    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
    
+
    <style>
    .padding {
                padding-right: 20px;
                font-size: 25px;
-      };
+      }
 
    .foot {
 
@@ -28,11 +29,13 @@
          font-size: 25px;
          font-style: italic;
          color : #33f;
-   };
+   }
 
    #breadcrumb {
-         float: right;
-         clear: both;
+         background-color: white;
+         width: 600px;
+         margin-top: 30px;
+         margin-left: 100px;
          border-radius: 25px;
          right: auto;
    }
@@ -42,6 +45,24 @@
       display: block;
    }
 
+
+  #breadcrumb li {
+         list-style: none;
+         padding: 1em;
+         display: block;
+         font-size: 20px;
+         color: #666;
+   }
+
+   .padding a  {
+
+      color: #000;
+   }
+
+   .row .col-md-6 h3 {
+
+      padding-bottom: 20px;
+   }
 
       </style> 
    
@@ -54,7 +75,7 @@
    <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6"><h1>Welcome to Canada</h1>
-         <h3>Let's find you the closest accomodation</h3></div>
+         <h3>Let's find you the closest hotel accomodation</h3></div>
       <div class="col-md-3"></div>
    </div>
 
@@ -65,7 +86,7 @@
       <div class="col-xs-6 col-md-8">
          
          <div id="fetch">
-            <input class="btn btn-default" type="text" placeholder="Hotels in Canada" id="term" />
+            <input class="btn btn-default" type="text" placeholder="Enter your state" id="term" />
       
             <button id="myGet" class="btn btn-success">Search Canada</button>
          </div>
